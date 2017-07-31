@@ -16,11 +16,11 @@ body {
     margin-top: -21px;
     margin: 0 auto;
 }
-.container-fluid .container-main {
-    margin: 0 auto;
+
+.container-radio {
     width: 100%;
     height: auto;
-    
+    margin: 0 auto;
 }
 
 .row {
@@ -226,41 +226,57 @@ background-color: #f03c0f;
     margin-top: 10px;
 }
 /*===========================================*/
-articl {
+article {
     display: block;
     margin: 50px auto;
 }
 
 
 
-/*//////animation  page /////////////////////////////*/
+/*//////animation   at index page /////////////////////////////*/
 
-.container-anime {
+#box {
     width: 100%;
     height: auto;
     margin: 0 auto;
-}
-.box {
-    background: #FF6347;/*orange*/
     position: absolute;
+}
+
+.box1 {
+    background: #FF6347;/*orange*/
+    position: relative;
     width: 50px;
     height: 50px;
-    margin-top: 50px;
-    margin-left: 100px;
+    margin-top: 0px ;
+    margin-left: 700px;
 }
 .box2 {
   margin-top: 80px;
   background: #FFB6C1;/*light pink*/
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-top: -400px;
+  margin-left: 400px;
 }
 
 .box3 {
   margin-top: 100px;
   background: #FFB6C1;/*light pink*/
+  width: 50px;
+  height: 50px;
+  margin-top: -200px;
+  margin-left: 1000px;
 }
 
 .box4 {
   margin-top: 50px;
   background: #FFB6C1;/*light pink*/
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-top: -200px;
+  margin-left: 300;
 }
 
 /*////////////////////////////anime /////////////////////////////*/
