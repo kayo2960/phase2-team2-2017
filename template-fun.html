@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Sets the character set to one that can display a wide range of languages and symboles -->
+    <!- Forces Internet Explorer to use the latest rending engine-->
+        <meta http-equiv="x-UA-compatrible" content="IE=edge">
+        <!-- Tells your site to use all of the availavle space inside your browser windows, regardless of where the site is viewed -->
+        <meta name="viewport" content="width=device-width, initial=scale=1.0"/>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]-->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+        
+        <!-- Latest compiled and minified CSS -->
+         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--[endif]-->
+   <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+   <link rel="stylesheet" href="css/myStyle.css"> <!--here own css file-->
+    
+    <title>Central Park</title>
+    </head>
+    
+    <body>
+        <!--Navbar is always write on the outside Main container-->
+        <nav class="navbar navbar-inverse navbar-default navbar-static-top">
+            <div class="container container-body"><!--Nav container-->
+            
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#index.html"><img class="logo" src="image/central-park-logo.png"></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+                </div><!--End Navbar Header-->
+                
+    <!--Navbar Collapse-->    
+            <div id="myNavbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav nav nav-pulls navbar-right" role="navigation">
+                    <li class="active" ><!--taggle="tab"--><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" id="dLabel" data-toggle="dropdown"
+                        href="#modalTab" data-toggle="tab" role="button"
+                        aria-haspopup="ture" aria-expanded="false">
+                            FUN!!<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#modal1Tab" data-target="#modal1Tab" data-toggle="modal">DO</a></li>
+                            <li><a href="#modal2Tab" data-target="#modal2Tab" data-toggle="modal">EAT</a></li>
+                            <li><a href="#modal3Tab" data-target="#modal3Tab" data-toggle="modal">SEE</a></li>
+                            <li><a href="fun.html">Fun Lists</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="do.html">DO</a></li>
+                    <li><a href="see.html">SEE</a></li>
+                    <li><a href="eat.html">EAT</a></li>
+                    <li><a href="animation.html">JS</a></li>
+                    <li><a href="form.html"><span class="label label-info">Log In</span></a></li>
+                    <li><form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-ms">Submit</button>
+                        </form></li>
+                </ul><!--End of UL-->
+                </div><!--End of Navbar Collapse-->
+            </div><!--End of Nav Container-->
+     </nav><!-- End Navbar-->
+  
+  
+   <div class="container-fluid container-main">   
+  <div class="container-fluid-thumbnails">
+	<div class="row-fluid">
+	    <!--What to Do-->
+        <div class="span9">
+		<ul class="thumbnails list-unstyled">
+		     <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>GMA Free Summer</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Chess & Checkers</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+              <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Shakespeare in the Park</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+              <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Victoria Gardens/Wollma Rink</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Row Boating/Gondola</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+        </ul>
+        </div>
+     
+     <!--Things to see-->   
+         <div class="span9">
+		<ul class="thumbnails list-unstyled">
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Whispering Bench</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Conservatory Gardens</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+              <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Waterfalls</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Belverdere Castle</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+              <li class="span4">
+                <div class="thumbnail">
+                  <img src="http://placehold.it/320x200" alt="ALT NAME">
+                  <div class="caption">
+                    <h3>Shakespear's Garden</h3>
+                    <p>Description</p>
+                    <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                  </div>
+                </div>
+              </li>
+        </ul>
+        </div>
+     
+     <!--Where to Eat-->   
+        <div class="span9">
+		<ul class="thumbnails list-unstyled">
+		    <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Dancing crane</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+              <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Ballfields Cafe</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+              <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Le Pain Quotidien</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x200" alt="ALT NAME">
+                <div class="caption">
+                  <h3>Loeb Boathouse</h3>
+                  <p>Description</p>
+                  <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                </div>
+              </div>
+            </li>
+              <li class="span4">
+                <div class="thumbnail">
+                  <img src="http://placehold.it/320x200" alt="ALT NAME">
+                  <div class="caption">
+                    <h3>Tavern on the Green</h3>
+                    <p>Description</p>
+                    <p align="center"><a href="#/" class="btn btn-primary btn-block">Open</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+	</div>
+</div><!--End of container-fluid-->
+</div><!--KOREKA-->
+
+       
+        
+  
+     <!--<div class="container-fun">  
+       <div class="toDo">
+           <ul><h2>What to do</h2>
+           <li>Chess & Checkers</li>
+           <li>Shakespeare in the Park</li>
+           <li>Victoria Gardens/Wollma Rink</li>
+           <li>Row Boating/Gondola</li>
+           </ul>
+       </div>
+       
+       <div class="toSee">
+           <ul><h2>Thing to See</h2>
+           <li>Whispering Bench</li>
+           <li>Conservatory Gardens</li>
+           <li>Waterfalls</li>
+           <li>Belverdere Castle</li>
+           <li>Shakespear's Garden</li>
+           </ul>
+       </div>
+       
+       <div class="toEat">
+           <ul><h2>Where to Eat</h2>
+           <li>Dancing Crane</li>
+           <li>Ballfields Cafe</li>
+           <li>Le Pain Quotidien</li>
+           <li>Loeb Boathouse</li>
+           <li>Tavern on the Green</li>
+           </ul>
+       </div>-->
+       
+   
+<!--Modal1Tab window here--> 
+         <div class="modal fade" id="modal1Tab" role="dialog">
+             <div class="modal-dialog">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <button class="close" data-dismiss="modal">
+                             <span>&times;</span>
+                         </button>
+                    <h4 class="modal-title">DO Activity</h4>
+                    <img class="img-responsive center-block" src="image/#.jpg">
+                        <a href="#modal1Tab" data-toggle="modal">
+                        <img class="img-responsive"
+                        src="http://via.placeholder.com/250x250">
+                        </a>
+                    
+                    <div class="row">
+                        <div class="col-md-6 col-md-pulls-6">Detailsxxxx</br>
+                    <p>Details here</p> 
+                    </div>
+                    <div class="col-md-6 col-md-pulls-6">
+                        <p>Detailsxxxxx</p>
+                       </div>
+                    </div><!--End of row-->
+                    
+                     </div>
+                     <div class="modal-footer">
+                         <caption>caption here</caption>
+                        <button class="btn btn-info btn-sm" data-dismiss="modal">
+                        close
+                        </button>
+                     </div>
+                 </div><!--End of Modal content -->
+            </div>
+         <div class="modal-body">
+             <p>xxxxxxxxx</p>
+         </div>
+         </div>
+         
+         <!--Modal2Tab window here--> 
+         <div class="modal fade" id="modal2Tab" role="dialog">
+             <div class="modal-dialog">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <button class="close" data-dismiss="modal">
+                             <span>&times;</span>
+                         </button>
+                    <h4 class="modal-title">EAT</h4>
+                    <img class="img-responsive center-block" src="image/#.jpg">
+                    <a href="#modal2Tab" data-toggle="modal">
+                        <img class="img-responsive"
+                    src="http://via.placeholder.com/250x250">
+                    </a>
+                    
+                    <div class="row">
+                        <div class="col-md-6 col-md-pulls-6">Detailsxxxx</br>
+                    <p>Details here</p> 
+                    </div>
+                    <div class="col-md-6 col-md-pulls-6">
+                        <p>Detailsxxxxx</p>
+                       </div>
+                    </div><!--End of row-->
+                    
+                     </div>
+                     <div class="modal-footer">
+                         <caption>caption here</caption>
+                        <button class="btn btn-info btn-sm" data-dismiss="modal">
+                        close
+                        </button>
+                     </div>
+                 </div><!--End of Modal content -->
+            </div>
+         <div class="modal-body">
+             <p>xxxxxxxxx</p>
+         </div>
+         </div>
+         
+         <!--Modal3Tab window here--> 
+         <div class="modal fade" id="modal3Tab" role="dialog">
+             <div class="modal-dialog">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <button class="close" data-dismiss="modal">
+                             <span>&times;</span>
+                         </button>
+                    <h4 class="modal-title">SEE</h4>
+                    <img class="img-responsive center-block" src="image/#.jpg">
+                    <a href="#modal3Tab" data-toggle="modal">
+                        <img class="img-responsive"
+                    src="http://via.placeholder.com/250x250">
+                    </a>
+                    
+                    <div class="row">
+                        <div class="col-md-6 col-md-pulls-6">Detailsxxxx</br>
+                    <p>Details here</p> 
+                    </div>
+                    <div class="col-md-6 col-md-pulls-6">
+                        <p>Detailsxxxxx</p>
+                       </div>
+                    </div><!--End of row-->
+                    
+                     </div>
+                     <div class="modal-footer">
+                         <caption>caption here</caption>
+                        <button class="btn btn-info btn-sm" data-dismiss="modal">
+                        close
+                        </button>
+                     </div>
+                 </div><!--End of Modal content -->
+            </div>
+         <div class="modal-body">
+             <p>xxxxxxxxx</p>
+         </div>
+         </div>
+         
+
+</div><!--End of cotainer-main-->
+
+
+<div class="container-fuild container-footer">
+<div class="footer">
+    <p>copyright:TEAM2 PHASE2</p>
+</div>
+</div><!--End of container-fuild-->
+
+      
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>       
+<script src="js/jquery-3.2.1.js" type="text/javascript"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" type="text/javascript"></script>
+ <script src="js/myScript.js" type="text/javascript"></script>   
+    </body>
+</html>
+    </body>
+</html>

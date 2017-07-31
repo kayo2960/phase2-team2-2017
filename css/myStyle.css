@@ -1,26 +1,49 @@
 /* Hi ladies, feel free to change any style!*/
-body { 
+body {
+    width: 100%;
+    height: auto;
     padding-top: 0;
     font-family: 'Fresca', sans-serif;
     font-size: 20px;
-    margin: -40px;
+    margin: -40px auto;
 }
 
 
 .container-fuild {
+    width: 100%;
+    height: auto;
     font-family: 'Fresca', sans-serif;/* feel free to change any fonts*/
     margin-top: -21px;
     margin: 0 auto;
 }
+.container-fluid .container-main {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    
+}
 
-.container-weather {
+.row {
+    /*margin-left: 200px; style for side bar menu space*/
+    margin: 0 auto;
+    padding: 2em;
+    overflow: hidden;
+    height: auto;
+    
+}
+
+/*.container-weather {
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     text-align: center;
-}
+}*/
 
-.container-form {
+/*.container-form {
+    width: 100%;
+    height: auto;
    text-align: center; 
-}
+}*/
 
 .container-image {
     margin-top: 70px;
@@ -43,12 +66,16 @@ body {
 .navbar.navbar-default {
     border-width:0px;
     background-color: #0bb238;
+    width: 100%;
+    height: auto;
 } 
 
 .nav .navbar-nav .nav .nav-pulls .navbar-right {
     margin: 0;
     border:0px;
     border-bottom-color: transparent !important;
+    width: 100%;
+    height: auto;
 }
 
 .img-responsive {
@@ -112,6 +139,10 @@ body {
     width: 100%;
 }
 
+.container-form {
+   margin: 0 auto;
+}
+
 /*footer style*/
 .footer{
   width: 100%;
@@ -132,8 +163,8 @@ body {
 
  #map {
         height: 400px;
-        width: 100%;
-        margin-top:20px;
+        width: 80%;
+        margin: 0 auto;
  }
  
  
@@ -171,3 +202,77 @@ background-color: #f03c0f;
   .navbar-default .navbar-nav > li > a {
    color: #ffffff; /*Change active text color here*/
     }
+
+/*======fun list page=====for template-fun-html*/
+.container-fun {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* fun lists thumbnails*/
+.container-fluid-thumbnails {
+    margin: 0 auto;
+}
+.row-fluid ul{
+    margin:0 auto;
+}
+
+.thumbnails {
+    float: left;
+}
+
+.span4 {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+/*===========================================*/
+articl {
+    display: block;
+    margin: 50px auto;
+}
+
+
+
+/*//////animation  page /////////////////////////////*/
+
+.container-anime {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.box {
+    background: #FF6347;/*orange*/
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.box2 {
+  margin-top: 80px;
+  background: #FFB6C1;/*light pink*/
+}
+
+.box3 {
+  margin-top: 100px;
+  background: #FFB6C1;/*light pink*/
+}
+
+.box4 {
+  margin-top: 50px;
+  background: #FFB6C1;/*light pink*/
+}
+
+/*////////////////////////////anime /////////////////////////////*/
+#container-anime {
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+}
+
+#img1 {
+    position: relative;
+    left:50px;
+    top:25px;
+}
+
