@@ -131,7 +131,7 @@ body {
   bottom: 0;
   left: 0;
   text-align: center;
-  margin-top: 100px;
+  margin: auto;
   background-color: #0bb238;
  
 }
@@ -331,3 +331,23 @@ article {
             fieldset  p {
                 text-align: center;
             }
+            body.choose {
+                
+                background-image: url('../image/random.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed; 
+                background-size: cover;
+                color: yellow;
+                margin-top: -20px;
+                overflow: auto;
+            }
+           .frmSite Button {
+               background-color: #f44336;
+              
+           }
+.footer-choose {
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+}

@@ -19,7 +19,6 @@ end of borrowed head
     <!- Forces Internet Explorer to use the latest rending engine-->
         <meta http-equiv="x-UA-compatrible" content="IE=edge">
         <!-- Tells your site to use all of the availavle space inside your browser windows, regardless of where the site is viewed -->
-        <meta name="viewport" content="width=device-width, initial=scale=1.0"/>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]-->
@@ -84,10 +83,10 @@ site = URL;
 }	
 /* ]]> */
 </script>
-<!--I (Monica) don't think this head closing belongs here:
+
 </head>
--->
-<body>
+
+<body class="choose">
 	<form  name="frmSite">
 		<input type="radio" name="site" onchange="if(this.checked){goTo('do.html')}"/>I want to DO something!<br/>
 		<input type="radio" name="site" onchange="if(this.checked){goTo('see.html')}"/>I want to LOOK at something!<br/>
@@ -100,8 +99,8 @@ site = URL;
 	</form>
 </body>
 
-<div class="container-fuild container-footer">
-<div class="footer">
+<div class="container-fluid container-footer">
+<div class="footer-choose">
     <p>copyright:TEAM2 PHASE2</p>
 </div>
 </div><!--End of container-fuild-->
@@ -121,6 +120,4 @@ site = URL;
  <script src="js/myScript.js" type="text/javascript"></script>   
     </body>
 </html>
-    </body>
-</html>
-</html>
+ 

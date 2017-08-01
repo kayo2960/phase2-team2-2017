@@ -94,23 +94,24 @@ $('.box3').animate({
             var result = document.getElementById('result');
             var numbers = document.getElementById('numbers');
             var symbols = document.getElementById('symbols');
-            
-            function getPassword(){
+                
+     function getPassword(){
                 var seed_letters = 'abcdefghijklmnopqrstuvwzyx';
-                var seed_numbers = '`123456789';
-                var seed_symbols = '!@#$%^&*()_+';
+                var seed_numbers = '123456789';
+                var seed_symbols = '!@#$%^&*()';
                 var seed;
                 
                 var len = slider.value;
                 var pwd = '';
                 
+                    
                 seed = seed_letters + seed_letters.toUpperCase();
                 if (numbers.checked === true) {
                     seed += seed_numbers;
                 }
                 
                 if (symbols.checked) {
-                    seed += seed_numbers;
+                    seed += seed_symbols;
                 }
                 
                 
@@ -118,23 +119,50 @@ $('.box3').animate({
                  //   pwd += seed[Math.floor(Math.random() * seed.length)];
                // }
               //   result.value = 'fjkdjfjkasjdfk';
-            }
+            
+            
+                     result.value = 'asdtekisut';
+                }
+            
             
                     slider.addEventListener('change',function() {
-                        label.innerHTML = this.value;
+                        label.innerHTML = this.value；
                     });
 
                     btn.addEventListener('click',function() {
                         getPassword();
-                       // result.value = 'fjkdjfjkasjdfk';
+                       // result.value = 'asdtekisut';
                     });
 
                     result.addEventListener('click',function() {
                         this.select();
                         
-                        getPassword();//uchigawa ni ireta kore
                     });
 
-                    
-            
+                     getPassword();
         })();
+ 
+ 
+ /*=====================Number type=========================================================*/       
+    /*    function checkNum(str, min, max) {
+	    if (str == "") {
+	        alert("Enter a number in the field, please.")
+	        return false
+	    }
+	    for (var i = 0; i < str.length; i++) {
+	        var ch = str.substring(i, i + 1)
+	        if (ch < "0" || ch > "9") {
+	            alert("Try a number, please.")
+	            return false
+	        }
+	    }
+	    var val = parseInt(str, 10)
+	    if ((val < min) || (val > max)) {
+	        alert("Try a number from 1 to 10.")
+	        return false
+	    }
+	    return true
+	}
+	function thanks() {
+	    alert("Thanks for your input.")
+	}*/
