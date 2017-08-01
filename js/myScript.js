@@ -82,47 +82,59 @@ $('.box3').animate({
 /*global windows*/
 /*global currentPos*/
  /*global math*/
-/*///////////////////////////////////////////////////anime////////////////////////////*/
-   
-function myMove() {
-    var elem = document.getElementById("img1"); 
-    var pos = 0;
-    var id = setInterval(frame, 5);
-    function frame() {
-        if (pos == 350) {
-            clearInterval(id);
-        } else {
-            pos++; 
-            elem.style.top = pos + 'px'; 
-            elem.style.left = pos + 'px'; 
-        }
-    }
-}    
-    
 
+/*==============================================================================*/
+/*==============FORM PAGE =======================================================*/
+(function(){
+            'use strict';
+          
+            var slider = document.getElementById('slider');
+            var label = document.getElementById('label');
+            var btn = document.getElementById('btn');
+            var result = document.getElementById('result');
+            var numbers = document.getElementById('numbers');
+            var symbols = document.getElementById('symbols');
+            
+            function getPassword(){
+                var seed_letters = 'abcdefghijklmnopqrstuvwzyx';
+                var seed_numbers = '`123456789';
+                var seed_symbols = '!@#$%^&*()_+';
+                var seed;
+                
+                var len = slider.value;
+                var pwd = '';
+                
+                seed = seed_letters + seed_letters.toUpperCase();
+                if (numbers.checked === true) {
+                    seed += seed_numbers;
+                }
+                
+                if (symbols.checked) {
+                    seed += seed_numbers;
+                }
+                
+                
+               // for (var i = 0; i < len; i++){
+                 //   pwd += seed[Math.floor(Math.random() * seed.length)];
+               // }
+              //   result.value = 'fjkdjfjkasjdfk';
+            }
+            
+                    slider.addEventListener('change',function() {
+                        label.innerHTML = this.value;
+                    });
 
-/*////////////////////////form radio code////////////////////////////*/
+                    btn.addEventListener('click',function() {
+                        getPassword();
+                       // result.value = 'fjkdjfjkasjdfk';
+                    });
 
-function myFunction() {
-    var x = document.getElementById("myRadio2").value;
-    document.getElementById("results").innerHTML = x;
-}
+                    result.addEventListener('click',function() {
+                        this.select();
+                        
+                        getPassword();//uchigawa ni ireta kore
+                    });
 
-function howFeels() {
-  var text;
-  var howFeels = document.getElementById("myRadio").value;
-
-  switch(howFeels) {
-    // add code here
-    case "very good":
-    text window.open(src="do.thml");
-    break;
-    case "very good":
-    text window.open(src="see.thml");
-    break;
-    case "very good":
-    text window.open(src="eat.html");
-    break;
-  }
-  document.getElementById("demo").innerHTML = text;
-}
+                    
+            
+        })();
