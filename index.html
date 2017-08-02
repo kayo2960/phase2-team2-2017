@@ -7,13 +7,14 @@
     <!- Forces Internet Explorer to use the latest rending engine-->
         <meta http-equiv="x-UA-compatrible" content="IE=edge">
         <!-- Tells your site to use all of the availavle space inside your browser windows, regardless of where the site is viewed -->
-        <meta name="viewport" content="width=device-width, initial=scale=1.0"/>
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]-->
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
     
         
         <!-- Latest compiled and minified CSS -->
@@ -162,10 +163,10 @@
     
 
  <!--Google Map-->        
-      <div class="container-fuild container-map">
-     <h3>Central Park Map</h3><!--This is basic map API now/ Still working-->
+<div class="container-fuild container-map">
+     <h3>Central Park Map</h3><!--This is basic map API-->
     <div id="map"></div>
-   </div><!--End of container-fuild container-map-->
+ </div><!--End of container-fuild container-map-->
 
 
 <div class="container-fuild container-footer">
@@ -175,18 +176,22 @@
 </div><!--End of container-fuild-->
 
       
-
-       
+ <Scripts.Render("~/Scripts/jquery-1.9.1.js")></script>
+<Scripts.Render("~/Scripts/bootstrap.js")></script> 
+            
 <!--<script src="js/jquery-3.2.1.js" type="text/javascript"></script>--> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" type="text/javascript"></script>
-<!--map-->
-<script async defer
+
+<!--map API-->
+ <!--<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>-->
+ <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7Ho9Z7jOY7FfMuMnMs2Z7xnap3vsM1zY&callback=initMap">
     </script>
  <script src="js/myScript.js" type="text/javascript"></script>   
     </body>
 </html>
-    </body>
+    

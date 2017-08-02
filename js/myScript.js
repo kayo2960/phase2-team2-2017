@@ -1,6 +1,5 @@
 // JavaScript File
-/* global$*/   
-
+/*global$*/   
 
 /*global google map js*/
 function initMap() {
@@ -11,11 +10,13 @@ function initMap() {
           zoom: 14
         });
       }
- 
+/*$(document).ready(function() { 
+  initMap(); 
+}*/
       
 /*animation page example*/
 /*global$*/
-
+$(document).ready(function(){
 /* Target the item using the class as the selector.*/
 /* Single animation*/
 $('.box1').animate({left: 500}, 100);
@@ -76,11 +77,10 @@ $('.box3').animate({
 });
 
 
-
+});
 
 
 /*global windows*/
-/*global currentPos*/
  /*global math*/
 
 /*==============================================================================*/
@@ -126,7 +126,7 @@ $('.box3').animate({
             
             
                     slider.addEventListener('change',function() {
-                        label.innerHTML = this.value；
+                        label.innerHTML = this.value;
                     });
 
                     btn.addEventListener('click',function() {
@@ -141,28 +141,3 @@ $('.box3').animate({
 
                      getPassword();
         })();
- 
- 
- /*=====================Number type=========================================================*/       
-    /*    function checkNum(str, min, max) {
-	    if (str == "") {
-	        alert("Enter a number in the field, please.")
-	        return false
-	    }
-	    for (var i = 0; i < str.length; i++) {
-	        var ch = str.substring(i, i + 1)
-	        if (ch < "0" || ch > "9") {
-	            alert("Try a number, please.")
-	            return false
-	        }
-	    }
-	    var val = parseInt(str, 10)
-	    if ((val < min) || (val > max)) {
-	        alert("Try a number from 1 to 10.")
-	        return false
-	    }
-	    return true
-	}
-	function thanks() {
-	    alert("Thanks for your input.")
-	}*/
